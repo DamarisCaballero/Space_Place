@@ -12,6 +12,11 @@
         document.getElementById("result").innerText = `${name}, tu signo zodiacal es ${signo}.`;
     }
     
+    // && en JavaScript es el operador lógico "y". 
+    //devuelve true solo si ambas condiciones son verdaderas//
+
+   //||: Este es el operador lógico "O"
+   //La declaración completa se evaluará como verdadera si al menos una de las condiciones es verdadera.
     function obtenerSignoZodiacal(mes, dia) {
         if ((mes === 3 && dia >= 21) || (mes === 4 && dia <= 19)) {
         return "Aries";
@@ -35,8 +40,9 @@
         return "Capricornio";
         } else if ((mes === 1 && dia >= 20) || (mes === 2 && dia <= 18)) {
         return "Acuario";
+        } else if ((mes === 2 && dia >= 19) || (mes === 3 && dia <= 20)) {
+            return "Piscis";
         } else {
-        return "Piscis";
+        return "Fecha no válida";
         }
     }
-  
