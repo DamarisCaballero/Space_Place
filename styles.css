@@ -1,24 +1,6 @@
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /*formuladio*/
     body {
         font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
     }
     
     .container {
@@ -27,11 +9,25 @@
         text-align: center;
     }
     
+    h1 {
+        color: #333;
+    }
+    
+    .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
     input[type="text"],
     input[type="date"],
     button {
-        margin: 10px 0;
-        padding: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
     }
     
     button {
@@ -43,5 +39,9 @@
     
     button:hover {
         background-color: #0056b3;
+    }
+    
+    #result {
+        margin-top: 20px;
     }
     
