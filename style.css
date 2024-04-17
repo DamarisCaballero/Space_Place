@@ -1,47 +1,97 @@
-segunda parte
-body{
-    background-color: rgb(242, 235, 251);
-
-}
-
-.presentacion{
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+header{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(233, 213, 236);
+    width: 100%;
+    margin: 10px 0 10px 0;
+    text-decoration:line-through;
+
+}
+
+.wrapper{
+    max-width: 1200px;
+}
+.wrapper .carousel{
+    white-space: nowrap;
+
+}
+.carousel img{
+    height: 340px;
+    object-fit: cover;
+    width: calc (100% / 3);
+
+}
+
+
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+header ul li{
+    margin: 10px;
+
+}
+
+header p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(66, 49, 11);
+}
+
+
+img{
+    width: 150px;
+}
+h1{
+    font-size: 34px;
+    color: rgb(60, 60, 214);
+    font-family:'Delicious Handrawn', cursive;
+}
+p{
+    font-size: 20px;
+    color: black;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    background:linear-gradient(90deg, rgb(167, 71, 190),rgb(191, 140, 196), rgb(180, 174, 180), rgb(235, 228, 235), rgb(252, 251, 252));    
+}
+
+.contenedorp p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(66, 49, 11);
+    background-color: rgb(238, 233, 243);
+    font-size: xx-large;
+
+
+}
+.caja{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.caja img{
+    border-radius: 100px;
+    margin-top: 20px;
+    width: 300px;
+
+}
+.caja p{
+    font-size: 15px;
+    margin: 10px 10px 10px 10px;
+    font-family: 'Arial';
+
 }
 
-.quien p{
-    display: flex;
-    font-size: 18px;
-}
-.qs{
-padding-left: 15px;
-}
 
-.quien img{
-    display: flex;
-    width: 330px;
-}
 
-.cards{
-display: flex;
-flex-direction: row;
-justify-content: center;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 45%;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 10px;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .container {
-    padding: 2px 16px;
-  }
