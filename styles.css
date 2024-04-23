@@ -1,6 +1,7 @@
    /*  navbar */
 .logo {
-    max-height: 40px; /* Ajusta la altura según sea necesario */
+    max-height: 50px;
+    width: auto;
 }
 
 .navbar-nav {
@@ -21,155 +22,78 @@
         }
     }
      /*  navbar fin */
-    
-    /* carrusel*/ 
-    .carousel {
-        position: relative;
-        width: 100%; /* Cambiar el ancho del carrusel para que ocupe toda la pantalla */
-        max-width: none; /* Eliminar el ancho máximo para que el carrusel sea más amplio */
-        margin: 0; /* Eliminar cualquier margen para que el carrusel ocupe todo el ancho */
-        overflow: hidden;
-        height: 600px;
-    }
-        
-        .carousel-inner {
-            display: flex;
-            width: 400%;
-            height: 100%;
-        }
-        
-        .carousel-item {
-            flex: 0 0 100%;
-        }
-        
-        .carousel-item img {
-            width: 100%;
-            height: auto;
-        }
-        
-        .carousel-caption {
-            position: absolute;
-            top: 50%; /* Alinear el borde superior de la capa de texto al 50% del contenedor padre */
-            left: 50%;
-            width: 100%;
-            transform: translateY(-50%); /* Centrar verticalmente mediante traslación */
-            background-color: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            padding: 4px;
-            box-sizing: border-box;
-            text-align: center; 
-            border: 2px solid red;
-        }
-        
-        .carousel-caption h3 {
-            margin: 0;
-            font-size: 24px;
-        }
-        
-        .carousel-caption p {
-            margin: 5px 0;
-        }
-        
-        
-    /* carrusel fin */
 
-/* card */
-segunda parte
-body{
-    background-color: rgb(242, 235, 251);
+/* carrusel de deysi */ 
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lobster&family=Madimi+One&family=Satisfy&family=Shadows+Into+Light&display=swap');
+
+
+header{
+    background-color: #d4bbfc;
+    width: 100%;
 }
 
-.presentacion{
+header ul {
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    
 }
 
-.quien p{
-    display: flex;
-    font-size: 18px;
-}
-.qs{
-padding-left: 15px;
-}
-
-.quien img{
-    display: flex;
-    width: 330px;
+header ul li{
+    margin: 25px;
+    font-size: 28px;
+    color: rgb(4, 4, 4);
+    font-family: "Cinzel", serif;
+    
 }
 
-.cards{
-display: flex;
-flex-direction: row;
-justify-content: center;
+
+img{
+    width: 500px;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 45%;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 10px;
+/**************************************/
+/* Personaliza los botones de navegación del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 44px; /* Tamaño de los botones */
+  height: 44px; /* Tamaño de los botones */
+  border-radius: 50%; /* Los botones serán circulares */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para visibilidad */
+  align-items: center; /* Centra el icono en el botón */
+  justify-content: center; /* Centra el icono en el botón */
+  display: flex; /* Permite usar flexbox para centrar el contenido */
 }
 
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* Asegura que los iconos sean blancos para una mejor visibilidad */
 }
 
-.container {
-    padding: 2px 16px;
+/* Centra el texto y ajusta el estilo en el carrusel */
+.carousel-caption {
+  text-align: center; /* Centra el texto horizontalmente */
+  bottom: 20%; /* Posición desde la parte inferior del carrusel */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la lectura */
+  padding: 1em; /* Espaciado alrededor del texto */
+  border-radius: 0.5em; /* Bordes redondeados */
+  max-width: 80%; /* Máxima anchura del texto */
+  left: 50%; /* Posición horizontal */
+  transform: translateX(-50%); /* Centra la caja de texto respecto al carrusel */
+  font-family: "Cinzel", serif; /* Fuente para el texto */
 }
-/* card */
-    
-    /* Calculadora de Signoooo Zodiacal*/
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-    }
-    
-    .container {
-        max-width: 400px;
-        margin: 50px auto;
-        text-align: center;
-    }
-    
-    h1 {
-        color: #333;
-    }
-    
-    .form-container {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    input[type="text"],
-    input[type="date"],
-    button {
-        width: 100%;
-        margin-bottom: 10px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-    
-    button {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-    
-    button:hover {
-        background-color: #0056b3;
-    }
-    
-    #result {
-        margin-top: 20px;
-    }
-    
-    /* Calculadora de Signoooo Zodiacal*/
 
+    /* Asegúrate de que el texto sea legible en pantallas pequeñas */
+    @media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 0.9rem;
+    }
+    }
+
+/* Ajustes adicionales para imágenes si es necesario */
+.carousel-item img {
+  width: 100%; /* Asegura que la imagen cubra el ancho */
+  height: 50vh; /* Mantiene la proporción de aspecto de la imagen */
+}
+
+/* carrusel de daysi fin */ 

@@ -1,10 +1,3 @@
-
-
-//carrusel fin
-
-
-
-
 function calcularSigno() {
         const name = document.getElementById("name").value;
         const birthdate = new Date(document.getElementById("birthdate").value);
