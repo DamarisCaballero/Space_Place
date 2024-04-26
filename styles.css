@@ -53,6 +53,7 @@ img{
 }
 
 /**************************************/
+
 /* Personaliza los botones de navegación del carrusel */
 .carousel-control-prev,
 .carousel-control-next {
@@ -95,7 +96,6 @@ img{
     width: 100%; 
     height: 50vh;
     }
-
 /* carrusel de daysi fin */ 
 
 /* Card Luvid ********************/
@@ -103,7 +103,7 @@ img{
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        max-width: 1200px; /* Ajusta este valor según la anchura deseada para el contenedor */
+        max-width: 1200px; 
     }
     
     .card {
@@ -112,7 +112,7 @@ img{
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin: 16px;
         overflow: hidden;
-        width: 30%; /* Cada tarjeta ocupará cerca de un tercio del ancho del contenedor */
+        width: 30%; 
         display: flex;
         flex-direction: column;
         }
@@ -123,17 +123,17 @@ img{
     }
     
     .card h3 {
-        margin: 16px; /* Añade espaciado alrededor del título */
+        margin: 16px; 
     }
     
     .card p {
-        margin: 0 16px 16px; /* Añade espaciado alrededor del párrafo */
+        margin: 0 16px 16px; 
     }
     
     .card button {
         margin: auto 16px 16px;
         padding: 8px 16px;
-        background-color: #9667e0; /* Elige tu color */
+        background-color: #9667e0; 
         color: white;
         border: none;
         border-radius: 4px;
@@ -141,8 +141,194 @@ img{
     }
     
     .card button:hover {
-        background-color: #EBD9FC; /* Un color un poco más oscuro para el hover */
+        background-color: #EBD9FC; 
+    }
+/* Card Luvid  fin******************/
+
+
+/* Calculadora Damaris ********************/
+
+.container_uno{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('./assets/estrellas/strart2.jpg');
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+
+    }
+
+    .calculator-container {
+        background: rgba(255, 255, 255, 0.9);
+        background: #ffffff; 
+        border: 2px solid #eaeaea; 
+        border-radius: 10px; 
+        padding: 20px; 
+        margin-top: 20px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        display: inline-block; 
     }
     
+    h1 {
+        color: #333; 
+        margin-bottom: 1em; 
+    }
+    
+    .form-container input[type="text"],
+    .form-container input[type="date"] {
+        font-size: 16px;
+        padding: 10px; 
+        margin-bottom: 10px; 
+        border: 1px solid #F2EBFB; 
+        border-radius: 5px; 
+        width: calc(100% - 22px);
+    }
+    
+    .form-container button {
+        width: 100%;
+        padding: 10px 0; 
+        background-color: #9667E0; 
+        color: white; 
+        border: none;
+        border-radius: 5px; 
+        cursor: pointer; 
+        font-size: 16px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+    
+    .form-container button:hover {
+        background-color: #D4BBFC; 
+    }
+    
+    #result {
+        margin-top: 20px;
+        font-size: 18px; 
+        color: #9667E0; 
+    }
 
-/* Card Luvid  fin******************/
+/* Calculadora Damaris fin ********************/
+
+/********  icon *****************/
+    .astronomy-services {
+        display: flex;
+        justify-content: space-around;
+        background: #F2EBFB; 
+        padding: 20px 0;
+    }
+    
+    .astronomy-card {
+        background: #EBD9FC; 
+        color: #040404; 
+        flex-basis: 24%; 
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        border-radius: 10px; 
+        text-align: center; 
+        transition: transform 0.3s ease; 
+    }
+    
+    .astronomy-card:hover {
+        transform: translateY(-10px); 
+    }
+    
+    .icon-container {
+        background: #D4BBFC; 
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 20px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .service-icon {
+        max-width: 50%; 
+        max-height: 50%;
+    }
+    
+    h3 {
+        margin: 10px 0; 
+    }
+    
+    p {
+        font-size: 0.9rem; 
+        line-height: 1.6; 
+    }
+    
+/************icon fin ********/
+
+
+
+
+
+
+
+    .appointment-section {
+        position: relative;
+        width: 100%;
+        height: 600px; /* Ajusta la altura según necesites */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('./assets/estrellas/strart1.jpg'); /* Cambia a la ruta de tu imagen */
+        background-size: cover;
+        background-position: center;
+        opacity: 0.8; /* Ajusta para que el formulario resalte sobre la imagen */
+        z-index: -1; /* Coloca la imagen detrás del formulario */
+    }
+    
+    .form-container {
+        width: 70%; /* O el ancho que prefieras para tu formulario */
+        background-color: rgba(255, 255, 255, 0.737); /* Semi-transparente para ver la imagen de fondo */
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 2; /* Asegura que el formulario esté sobre la imagen de fondo */
+    }
+    
+    .form-container h2 {
+        color: #9667E0;
+        margin-bottom: 20px;
+    }
+    
+    .form-container form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form-container input,
+    .form-container select,
+    .form-container textarea {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #EBD9FC;
+        border-radius: 4px;
+    }
+    
+    .form-container button {
+        padding: 15px;
+        background-color: #9667E0;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .form-container button:hover {
+        background-color: #D4BBFC;
+    }
+    

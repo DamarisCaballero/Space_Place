@@ -14,7 +14,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="./assets/star_10571836.png" alt="LOGO" class="logo">
+        <img src="./assets/estrellas/star_10571836.png" alt="LOGO" class="logo">
       </a>
   
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,21 +56,21 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="./assets/planetas.jpg" class="d-block w-100" alt="...">
+      <img src="./assets/estrellas/estrellas 2.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>EL UNIVERSO</h5>
         <p>Desde lo más pequeño a lo más grande, el Universo es todo lo que existe Desde el mundo invisible de las partículas que constituyen nuestros cuerpos hasta las grandes galaxias formadas por millones y millones de estrellas. Todo lo que es, lo que ha sido y lo que será. Eso es el Universo.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="./assets/estrellas.jpg" class="d-block w-100" alt="...">
+      <img src="./assets/estrellas/estrellas.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>LAS ESTRELLAS</h5>
         <p>Son grandes cúmulos de materia (mucho más grandes que cualquier planeta) que se encuentra a temperaturas elevadísimas. De hecho, en las estrellas tienen lugar millones de reacciones nucleares cada segundo, como las de las bombas atómicas de hidrógeno. Por eso brillan tanto e irradian tanto calor.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="./assets/PLANETAS 2.jpg" class="d-block w-100" alt="...">
+      <img src="./assets/estrellas/PLANETAS 2.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>LOS PLANETAS</h5>
         <p>Son cuerpos redondos de un tamaño muy pequeño comparado con el de las estrellas. Orbitan alrededor de una o más estrellas formando sistemas planetarios. No emiten luz.</p>
@@ -136,8 +136,9 @@
 
 
 <!----Calculadora de Signoooo Zodiacal------->
-<div class="container">
-  <h1>Calculadora de Signoooo Zodiacal</h1>
+<div class="container_uno" >
+<div class="calculator-container">
+  <h1>Calculadora de Signo Zodiacal</h1>
   <div class="form-container">
   <input type="text" id="name" name="name" placeholder="Nombre" required>
   <input type="date" id="birthdate" name="birthdate" required>
@@ -145,7 +146,42 @@
   </div>
   <div id="result"></div>
 </div>
+</div>
   <script src="./script.js"></script>
+
+  <!------icon-->
+  <div class="astronomy-services">
+    <div class="astronomy-card">
+      <div class="icon-container">
+        <img src="./assets/Icon/moon-phase.png" alt="Estrellas" class="service-icon">
+      </div>
+      <h3>Estrellas</h3>
+      <p>Explora las maravillas de estrellas distantes y aprende sobre sus secretos.</p>
+    </div>
+    <div class="astronomy-card">
+      <div class="icon-container">
+        <img src="./assets/Icon/planets (1).png" alt="Planetas" class="service-icon">
+      </div>
+      <h3>Planetas</h3>
+      <p>Descubre los planetas de nuestro sistema solar y más allá.</p>
+    </div>
+    <div class="astronomy-card">
+      <div class="icon-container">
+        <img src="./assets/Icon/planets (2).png" alt="Constelaciones" class="service-icon">
+      </div>
+      <h3>Constelaciones</h3>
+      <p>Aprende a identificar constelaciones y su significado en la historia humana.</p>
+    </div>
+    <div class="astronomy-card">
+      <div class="icon-container">
+        <img src="./assets/Icon/planets.png" alt="Galaxias" class="service-icon">
+      </div>
+      <h3>Galaxias</h3>
+      <p>Embárcate en un viaje a través del cosmos para descubrir diferentes galaxias.</p>
+    </div>
+  </div>
+  
+  <!-----icon fin -->
 
   <!-- quiénes somos-->
   <div class="presentacion">
@@ -156,7 +192,7 @@
                   <p>En Space Place, nos apasiona el vasto universo que se extiende más allá de nuestra atmósfera. Nos dedicamos a compartir el asombro y la fascinación del espacio exterior de una manera accesible y emocionante. Desde los planetas que conforman nuestro sistema solar hasta las constelaciones que adornan nuestro cielo nocturno, nuestro objetivo es proporcionar información importante de manera sencilla y fácil de entender. Creemos que al acercar el cosmos a todos, podemos inspirar el interés y la curiosidad por el espacio y todo lo relacionado con él. Ya sea explorando los secretos de Marte, maravillándonos con la belleza de Orión o explorando las influencias cósmicas en nuestros horóscopos, estamos aquí para guiarlo en un viaje de descubrimiento y aprendizaje. Únete a nosotros mientras exploramos los límites del universo y nos maravillamos con la inmensidad del cosmos. ¡Bienvenidos a Space Place!</p>
                 </td>
                 <td>
-                    <img src="./imagenes/nosotros.png" alt="">
+                    <img src="./assets/imagenes/nosotros.png" alt="">
                 </td>
             </tr>
         </table>
@@ -167,19 +203,55 @@
     </div>
     <br>
     <!-- cards de planetas y constelaciones-->
-    <div class="cards">
-        <div class="card">
-            <img src="./imagenes/card planetas.jpg" alt="Planetas" style="width:100%">
-            <div class="container">
-              <h3><b>Planetas</b></h3>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./imagenes/card constelaciones.jpg" alt="Constelaciones" style="width:100%">
-            <div class="container">
-              <h3><b>Constelaciones</b></h3>
-            </div>
-          </div>
+    <div class="card-container">
+      <div class="card">
+        <img src="./assets/imagenes/night-sky-glows-with-iridescent-deep-space-generative-ai.jpg" alt="Contabilidad" class="card-img">
+        <h3>Planetas</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rerum est iusto sapiente neque cumque illum sunt velit earum inventore sit?</p>
+        <button>Leer Más</button>
+      </div>
+      <div class="card">
+        <img src="./assets/estrellas/strart1.jpg" alt="Administración" class="card-img">
+        <h3>Constalaciones</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rerum est iusto sapiente neque cumque illum sunt velit earum inventore sit?</p>
+        <button>Leer Más</button>
+      </div>
+      <div class="card">
+        <img src="./assets/imagenes/card planetas original.jpg" alt="Computación" class="card-img">
+        <h3>Sistema solar</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rerum est iusto sapiente neque cumque illum sunt velit earum inventore sit?</p>
+        <button>Leer Más</button>
+      </div>
     </div>
-  </body>
+
+
+
+<div class="appointment-section">
+  <div class="background-image"></div>
+  <div class="form-container">
+    <h2>Conoce la Posición de los Planetas</h2>
+    <form id="planet-form">
+      <input type="text" id="name" name="name" placeholder="Nombre Completo" required>
+      <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+      <input type="tel" id="phone" name="phone" placeholder="Número de Teléfono" required>
+      <select id="planet" name="planet">
+        <option value="">Selecciona un Planeta</option>
+        <option value="Marte">Marte</option>
+        <option value="Venus">Venus</option>
+        <option value="Mercurio">Mercurio</option>
+        <option value="Júpiter">Júpiter</option>
+        <option value="Saturno">Saturno</option>
+        <option value="Urano">Urano</option>
+        <option value="Neptuno">Neptuno</option>
+      </select>
+      <textarea id="message" name="message" placeholder="Dejanos tu mensaje"></textarea>
+      <button type="submit">Consultar</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <h5>FOOTER</h5>
+</footer>
+</body>
 </html>
