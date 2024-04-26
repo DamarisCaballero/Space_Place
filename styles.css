@@ -56,44 +56,93 @@ img{
 /* Personaliza los botones de navegación del carrusel */
 .carousel-control-prev,
 .carousel-control-next {
-  width: 44px; /* Tamaño de los botones */
-  height: 44px; /* Tamaño de los botones */
-  border-radius: 50%; /* Los botones serán circulares */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para visibilidad */
-  align-items: center; /* Centra el icono en el botón */
-  justify-content: center; /* Centra el icono en el botón */
-  display: flex; /* Permite usar flexbox para centrar el contenido */
-}
+    width: 44px;
+    height: 44px; 
+    border-radius: 50%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    align-items: center; 
+    justify-content: center; 
+    display: flex; 
+    }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(100%); /* Asegura que los iconos sean blancos para una mejor visibilidad */
+    filter: invert(100%); 
 }
 
 /* Centra el texto y ajusta el estilo en el carrusel */
 .carousel-caption {
-  text-align: center; /* Centra el texto horizontalmente */
-  bottom: 20%; /* Posición desde la parte inferior del carrusel */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la lectura */
-  padding: 1em; /* Espaciado alrededor del texto */
-  border-radius: 0.5em; /* Bordes redondeados */
-  max-width: 80%; /* Máxima anchura del texto */
-  left: 50%; /* Posición horizontal */
-  transform: translateX(-50%); /* Centra la caja de texto respecto al carrusel */
-  font-family: "Cinzel", serif; /* Fuente para el texto */
+    text-align: center; 
+    bottom: 20%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 1em; 
+    border-radius: 0.5em; 
+    max-width: 80%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-family: "Cinzel", serif; 
 }
 
-    /* Asegúrate de que el texto sea legible en pantallas pequeñas */
+    
     @media (max-width: 768px) {
     .carousel-caption {
         font-size: 0.9rem;
     }
     }
 
-/* Ajustes adicionales para imágenes si es necesario */
+
 .carousel-item img {
-  width: 100%; /* Asegura que la imagen cubra el ancho */
-  height: 50vh; /* Mantiene la proporción de aspecto de la imagen */
-}
+    width: 100%; 
+    height: 50vh;
+    }
 
 /* carrusel de daysi fin */ 
+
+/* Card Luvid ********************/
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1200px; /* Ajusta este valor según la anchura deseada para el contenedor */
+    }
+    
+    .card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 16px;
+        overflow: hidden;
+        width: 30%; /* Cada tarjeta ocupará cerca de un tercio del ancho del contenedor */
+        display: flex;
+        flex-direction: column;
+        }
+    
+    .card-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card h3 {
+        margin: 16px; /* Añade espaciado alrededor del título */
+    }
+    
+    .card p {
+        margin: 0 16px 16px; /* Añade espaciado alrededor del párrafo */
+    }
+    
+    .card button {
+        margin: auto 16px 16px;
+        padding: 8px 16px;
+        background-color: #9667e0; /* Elige tu color */
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .card button:hover {
+        background-color: #EBD9FC; /* Un color un poco más oscuro para el hover */
+    }
+    
+
+/* Card Luvid  fin******************/
